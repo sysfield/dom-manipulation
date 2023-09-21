@@ -2,6 +2,21 @@ const container = document.querySelector('#container');
 
 const content = document.createElement('div');
 content.classList.add('content');
-content.textContent = 'THis is the glorious text-content!';
+content.textContent = 'This is the glorious text-content!';
 
-container.appendChild(content);
+const redp = document.createElement('p');
+redp.style.color = 'red';
+
+const blueh3 = document.createElement('h3');
+blueh3.style.color = 'blue';
+
+const h1box = document.createElement('h1');
+h1box.textContent = 'I\'m in a div';
+
+const pbox = document.createElement('p');
+pbox.textContent = 'ME TOO!';
+
+const divbox = document.createElement('div');
+divbox.appendChild(h1box, pbox);
+
+container.appendChild(content, redp, blueh3, divbox);
