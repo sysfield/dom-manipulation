@@ -6,6 +6,7 @@ content.textContent = 'This is the glorious text-content!';
 
 const redp = document.createElement('p');
 redp.style.color = 'red';
+redp.textContent = 'Hey I\'m red!'
 
 const blueh3 = document.createElement('h3');
 blueh3.style.color = 'blue';
@@ -17,6 +18,6 @@ const pbox = document.createElement('p');
 pbox.textContent = 'ME TOO!';
 
 const divbox = document.createElement('div');
-divbox.appendChild(h1box, pbox);
+divbox.append(h1box, pbox);
 
-container.appendChild(content, redp, blueh3, divbox);
+container.append(content, redp, blueh3, divbox);
